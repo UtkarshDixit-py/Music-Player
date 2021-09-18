@@ -1,11 +1,16 @@
 body{
     background-color: darkgrey;
 }
+#menu{
+    width:35px;
+    height: 5px;;
+}
 #menu div{
     width: 35px;;
     height: 5px;;
     background-color:#0a243b;
     margin:6px 0px;
+    
 }
 .search input[type=text]{
     
