@@ -1,48 +1,17 @@
 body{
     background-color: darkgrey;
 }
-#menu{
-    /* Dimensions same as menu div */
-    width:35px;
-    height:5px;
-}
-#menu div{
-    width: 35px;;
-    height: 5px;;
-    background-color:#0a243b;
-    margin:6px 0px;
-    
-}
-.search input[type=text]{
-    
-    width:300px;
-    height:25px;
-    border-radius:25px;
-    border: none;
-}
-.search{
-    float:right;
-    margin:7px;
-}
-.search button {
-    
-    background-color: #0a243b;
-    color: #f2f2f2;
-    float: right;
-    padding: 5px 5px;
-    margin-right: 16px;
-    font-size: 12px;
-    border: none;
-    cursor: pointer;
-} 
+
+
 .main{
-    margin-left: 160px; /* Same as the width of the sidenav */
+    margin-left: 300px; /* Same as the width of the sidenav */
     font-size: 28px; /* Increased text to enable scrolling */
     padding: 0px 10px;
 }
+/* Styling of side navigation(left) */
 .sidenav {
     height: 100%;
-    width: 160px;
+    width: 300px;
     position: fixed;
     z-index: 1;
     top: 0;
@@ -61,8 +30,82 @@ body{
   .sidenav a:hover {
     color: #f1f1f1;
   }
-  #menu div:hover{
-        color: #f1f1f1;
-      
-  }
+
+  
+
+body{
+  background:  #0c1027;
+  /* background-color: #0c1027; */
+  font-family: 'Open Sans', sans-serif;
+}
+
+.search {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.searchTerm {
+  width: 100%;
+  border: 3px solid  #9CA3A;
+  /* #0c1027; */
+  border-right: none;
+  padding: 5px;
+  height: 20px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #9CA3A;
+}
+
+.searchTerm:focus{
+  color: #9CA3A;
+   /* #0c1027; */
+}
+
+.searchButton {
+  width: 40px;
+  height: 36px;
+  border: 1px solid #9CA3A;
+  background: #9CA3A;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/*Resize the wrap to see the search bar change!*/
+.wrap{
+  width: 30%;
+  position: fixed;
+  top: 5%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+}
+.banner{
+  margin: 50px;; 
+  padding:50px;
+  top:60%;
+  left:70%;
+  
+}
+.banner img{
+  top: 80%;
+  height: 220px;
+  width:220;
+  transition: transform .5s; /* Animation */
+}
+.banner img:hover {
+  /* position:relative;
+  top:-25px;
+  left:-35px;
+  width:500px;
+  height:auto;
+  display:block;
+  z-index:999; */
+  height: 300px;
+  width: 300px;
+}
+
+  
   
