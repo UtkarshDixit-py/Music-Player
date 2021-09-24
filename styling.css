@@ -24,7 +24,8 @@ body{
     padding: 6px 8px 6px 16px;
     text-decoration: none;
     font-size: 25px;
-    color: #818181;
+    /* color: #818181; */
+    color:whitesmoke;
     display: block;
   }
   .sidenav a:hover {
@@ -47,31 +48,35 @@ body{
 
 .searchTerm {
   width: 100%;
-  border: 3px solid  #9CA3A;
+  border: 3px solid  #00B4CC;
   /* #0c1027; */
   border-right: none;
   padding: 5px;
   height: 20px;
   border-radius: 5px 0 0 5px;
   outline: none;
-  color: #9CA3A;
+  color: #00B4CC;
 }
 
 .searchTerm:focus{
-  color: #9CA3A;
+  color: #0c1027;
    /* #0c1027; */
 }
 
 .searchButton {
   width: 40px;
   height: 36px;
-  border: 1px solid #9CA3A;
-  background: #9CA3A;
+  border: 1px solid #00B4CC;
+  background: #00B4CC;
   text-align: center;
   color: #fff;
   border-radius: 0 5px 5px 0;
   cursor: pointer;
   font-size: 20px;
+}
+.searchButton img{
+  height: 20px;
+  width:20px;
 }
 
 /*Resize the wrap to see the search bar change!*/
@@ -101,9 +106,9 @@ body{
   height: 300px;
   width: 300px; */
   -webkit-transform: scale(1.2);
--ms-transform: scale(1.2);
-transform: scale(1.2);
-transition: 1s ease;
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+  transition: 1s ease;
 }
 .side-bar-tracks #song-dsc{
     position: relative;
@@ -156,6 +161,17 @@ color:rgb(233, 232, 241);
 	display: flex;
 	flex-direction: column;
 }
+.homepage h2{
+  color: whitesmoke;
+  position: fixed;
+  top: 50%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+}
+.center {
+  border: 5px;
+  text-align: center;
+  }
 
   
   
