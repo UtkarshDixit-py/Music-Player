@@ -39,6 +39,7 @@ body::-webkit-scrollbar-thumb {
     overflow-y: scroll; 
     padding-top: 20px;
     
+    
   }
   .scrollable{
     scrollbar-width: thin;
@@ -260,6 +261,13 @@ color:rgb(233, 232, 241);
   color: #cec6df;
   margin:5px;
 }
+
+
+
+
+
+
+
 
 
 
