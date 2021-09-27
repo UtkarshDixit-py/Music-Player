@@ -2,9 +2,7 @@ html{
   --scrollbarBG:#0c1027;
   --thumbBG:#282e4b;
 }
-body{
-    background-color: darkgrey;
-}
+
 body::-webkit-scrollbar {
   width: 11px;
 }
@@ -261,6 +259,7 @@ color:rgb(233, 232, 241);
   color: #cec6df;
   margin:5px;
 }
+
 
 
 
