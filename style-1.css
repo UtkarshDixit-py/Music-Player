@@ -1,14 +1,14 @@
 body{
-  
-    background-color: #0c1027;
-    font-family: 'Open Sans', sans-serif;
+
+    background: #181818;
+    font-family: 'Roboto', sans-serif;
     overflow-x: hidden;
 }
 /* CUSTOM SCROLL BAR fOR HOMEPAGE*/
 
 html{
-  --scrollbarBG:#0c1027;
-  --thumbBG:#282e4b;
+  --scrollbarBG:#181818;
+  --thumbBG:black;
   display:flex;
 }
 
@@ -45,6 +45,8 @@ body::-webkit-scrollbar-thumb {
 }
 .profilepic img{
     border-radius: 50%;
+    height: 50px;
+    width:50px;
 
 }
 /* SEARCH BAR */
@@ -58,13 +60,13 @@ body::-webkit-scrollbar-thumb {
   
   .searchTerm {
     width: 100%;
-    border: 3px solid  #00B4CC;
+    border: 3px solid  mediumseagreen;
     border-right: none;
     padding: 5px;
     height: 20px;
     border-radius: 5px 0 0 5px;
     outline: none;
-    color: #00B4CC;
+    color: mediumseagreen;
   }
   
   .searchTerm:focus{
@@ -74,8 +76,9 @@ body::-webkit-scrollbar-thumb {
   .searchButton {
     width: 40px;
     height: 36px;
-    border: 1px solid #00B4CC;
-    background: #00B4CC;
+    border: 1px solid mediumseagreen;
+    background:mediumseagreen;
+     /* #00B4CC; */
     text-align: center;
     color: #fff;
     border-radius: 0 5px 5px 0;
@@ -99,6 +102,8 @@ body::-webkit-scrollbar-thumb {
   
 /* CAROUSEL */
     
+
+
   .carousel-frame {
     height: 600px;
     margin: 0;
@@ -215,7 +220,11 @@ body::-webkit-scrollbar-thumb {
     scrollbar-width: thin;
     overflow-x:hidden;
     overflow-y: visible;
+    border-right: 1px solid rgba(255,255,255,0.06);
     
+  }
+  .side-bar a{
+    text-decoration: none;
   }
   
   .heading{
@@ -328,6 +337,8 @@ body::-webkit-scrollbar-thumb {
   margin:20px;
   border-radius: 40px;
   transition: 1s ease;
+  min-height: 100px;
+  min-width: 75px;
 
 }
 .image-container img:hover{
@@ -372,24 +383,6 @@ body::-webkit-scrollbar-thumb {
   
   
 }
- /* .artist-image-container a img{
-  position: relative;
-  left:20px;
-  height: 170px;
-	width: 170px;
-  border-radius:50%;
-  filter: grayscale(100%);
--webkit-filter: grayscale(100%);
--webkit-transition: all 0.5s ease;
- }
-
- .artist-image-container a img:hover{
-  filter: grayscale(0%);
-  filter: gray;
-  -webkit-filter: grayscale(0%);
-  filter: none;
-  transition: 0.5s ease;
- } */
 
  /* .............................. */
  .hover-img {
@@ -482,5 +475,221 @@ body::-webkit-scrollbar-thumb {
 .hover-img:hover figcaption {
   opacity: 1;
 }
+
+/* ..........Current Track Bar.............. */
+
+#song-control-bar{
+	top: 89%;
+	height: 11vh;
+	width: 100%;
+	background-color: #50d9de;
+	position: fixed;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	z-index: 2;
+	display: none;
+}
+
+#song-control-bar .part-1{
+		height: 100%;
+		width: 15%;	
+		margin-left: 1%;
+		background-color: transparent;
+}
+
+#song-control-bar .part-1 .current-song{
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: transparent;
+}
+
+.current-song .image-container{
+	height: 100%;
+	width: 70%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background-color: transparent;
+}
+
+.current-song .image-container .list-song-image{
+	padding: 4% 0%;
+	height: 100%;
+	width: 50%;
+	background-color: transparent;
+}
+
+.current-song .image-container  img{
+	height: 100%;
+	width: 100%;
+}
+
+.current-song .image-container .list-song-name-date{
+	height: 50%;
+	width: 30%;
+	text-align: center;
+	background-color: transparent;
+}
+
+.current-song .image-container .list-song-name-date .list-song-name{
+	font-size: 0.6rem;
+	font-weight: bold;
+	background-color: transparent;
+
+}
+.current-song .image-container .list-song-name-date .album-name{
+	font-size: 0.5rem;
+	font-weight: bold;
+	background-color: transparent;
+
+}
+
+.current-song  .like-btn{
+	margin-left: -10%;
+	height: 50%;
+	width: 20%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background-color: transparent;
+}
+
+.current-song  .like-btn .far, 
+.current-song  .like-btn .fas{
+	font-size: 0.7rem;
+	background-color: transparent;
+}
+
+.part-2{
+	height: inherit;
+	width: 40%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: transparent;
+
+}
+
+.part-2 .controls{
+	width: inherit;
+	height: 50%;
+	text-align: center;
+	background-color: transparent;
+	margin-top: 2%;
+}
+.part-2 .controls > ul{
+	list-style: none;
+	width: 100%;
+	height: inherit;
+	display: flex;
+	justify-content: space-between;
+	background-color: transparent;
+
+}
+.part-2 .controls > ul li{
+	background-color: transparent;
+}
+
+.part-2 .controls > ul li .fas{
+	font-size: 1rem;
+	background-color: transparent;
+
+}
+
+.part-2 .duration-bar{
+	display: flex;
+	height: 50%;
+	width: 100%;
+	align-items: center;
+	background-color: transparent;
+}
+
+.part-2 .duration-bar .duration-start,
+.part-2 .duration-bar .duration-end{
+	height: 50%;
+	width: 10%;
+	font-size: 0.5rem;
+	font-weight: bold;
+	margin: 0% 0%;
+	text-align: center;
+	background-color: transparent;
+
+}
+
+.part-2 .duration-bar .range-bar{
+	width: 100%;
+	background-color: transparent;
+
+}
+.part-2 .duration-bar .range-bar input{
+	width: 100%;
+	background-color: transparent;
+}
+.part-2 .duration-bar .range-bar input font{
+	background-color: transparent;
+}
+
+.part-3{
+	height: 100%;
+	width: 15%;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	background-color: transparent;
+}
+
+.part-3 >ul{
+	height: 50%;
+	width: 100%;
+	display: flex;
+	list-style: none;
+	justify-content: space-between;
+	background-color: transparent;
+}
+
+.part-3 >ul li{
+	background-color: transparent;
+	height: 100%;
+	width: 10%;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	background-color: transparent;
+}
+
+.part-3 >ul li .fas{
+	font-size: 1rem;
+	background-color: transparent;
+}
+
+.part-3 >ul li input{
+	width: 100%;
+	height: 20%;
+	background-color: transparent;
+}
+
+
+.part-3 >ul li input font{
+	height: 0;
+	width: 0;
+	background-color: transparent;
+}
+
+#song-control-bar a{
+	text-decoration: none;
+	background-color: transparent;
+	color: black;
+}
+
+#song-control-bar:target{
+	display: flex;
+}
+
+
+
 
  
